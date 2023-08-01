@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    discovery:
+      enabled: false
+    gateway:
+      routes:
+        - id: redirect_route
+          uri: https://www.google.com
+          predicates:
+            - Path=/redirect
+          filters:
+          - RedirectTo=302, https://www.google.com
