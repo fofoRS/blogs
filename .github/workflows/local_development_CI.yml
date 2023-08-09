@@ -13,7 +13,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v3
         with:
-          parse-checkout:
+          sparse-checkout:
             .github
             /spring-boot-docker-local-development
           sparse-checkout-cone-mode: false
