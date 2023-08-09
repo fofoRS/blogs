@@ -25,7 +25,7 @@ jobs:
         name: api_gateway Build & Publish
         uses: docker/build-push-action@v4
         with:
-          context: ./spring-boot-docker-local-development/api-gateway
+          context: ./spring-boot-docker-local-development/api-gateway/
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/api-gateway:latest
