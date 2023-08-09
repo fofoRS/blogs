@@ -30,7 +30,7 @@ jobs:
         name: discovery_service Build & Publish
         uses: docker/build-push-action@v4
         with:
-          context: "{{defaultContext}}:/spring-boot-docker-local-development/discovery_service"
+          context: "{{defaultContext}}:/spring-boot-docker-local-development/discovery-service"
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/discovery_service:latest
