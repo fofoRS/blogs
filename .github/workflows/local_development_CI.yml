@@ -31,6 +31,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: "{{defaultContext}}:/spring-boot-docker-local-development/discovery_service"
-          file: Dockerfile
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/discovery_service:latest
