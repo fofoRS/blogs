@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - "main"
+    paths:
+      - spring-boot-docker-local-development/**
 
 jobs:
   build:
