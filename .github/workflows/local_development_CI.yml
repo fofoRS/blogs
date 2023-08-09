@@ -26,7 +26,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: ./spring-boot-docker-local-development/api-gateway/
-          file: ./Dockerfile
+          file: Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/api-gateway:latest
       -
@@ -34,6 +34,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: ./spring-boot-docker-local-development/discovery_service/
-          file: ./Dockerfile
+          file: Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/discovery_service:latest
