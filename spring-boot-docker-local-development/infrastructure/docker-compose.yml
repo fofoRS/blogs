@@ -1,0 +1,23 @@
+services:
+  discovery-service:
+    image: rrojas/discovery-service:local
+    expose:
+      - 8761
+    ports:
+        - 8761:8761
+    networks:
+      - local-development
+  api-gateway:
+    image: rrojas/api-gateway:local
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    depends_on:
+      - discovery-service
+    networks:
+      - local-development
+networks:
+  local-development:
+    name: local-development
+    external: true

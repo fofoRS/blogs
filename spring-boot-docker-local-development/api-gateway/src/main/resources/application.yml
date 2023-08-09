@@ -1,9 +1,11 @@
 server:
   port: 8080
 spring:
+  application:
+    name: api-gateway
   cloud:
     discovery:
-      enabled: false
+      enabled: true
     gateway:
       routes:
         - id: redirect_route
@@ -12,3 +14,24 @@ spring:
             - Path=/redirect
           filters:
           - RedirectTo=302, https://www.google.com
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka/
+
+management:
+  endpoints:
+    enabled-by-default: true
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: DEBUG
+
