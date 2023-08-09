@@ -30,7 +30,7 @@ jobs:
         name: api_gateway Build & Publish
         uses: docker/build-push-action@v4
         with:
-          context: api-gateway
+          context: /spring-boot-docker-local-development/api-gateway
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/api-gateway:latest
@@ -38,7 +38,7 @@ jobs:
         name: discovery_service Build & Publish
         uses: docker/build-push-action@v4
         with:
-          context: discovery_service
+          context: /spring-boot-docker-local-development/discovery_service
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/discovery_service:latest
