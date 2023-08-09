@@ -35,4 +35,4 @@ jobs:
           context: "{{defaultContext}}:/spring-boot-docker-local-development/discovery-service"
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/discovery_service:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/discovery-service:latest
