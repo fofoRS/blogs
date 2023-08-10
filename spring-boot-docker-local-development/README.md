@@ -1,7 +1,7 @@
 ## spring-boot-docker-local-development
 
-Very simplistic project that counts with three services that looks for simulate a microservices b`ased application.
-*I know there are many other components, technics  and practices to consider this as a microservic`e architecture, but this setup fits the goals of this repo*
+Very simplistic project that counts with three services that looks for simulate a microservices based application.
+*I know there are many other components, technics  and practices to consider this as a microservice architecture, but this setup fits the goals of this repo*
 which is to show how set up a local environment using Docker, Docker-Compose and Docker's multi stage capabilities to run a local environment easily, 
 helping us to spin up multiple services and save many hours from installing, configuring and troubleshooting. :) 
 
