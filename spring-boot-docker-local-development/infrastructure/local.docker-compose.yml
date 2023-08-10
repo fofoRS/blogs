@@ -1,6 +1,8 @@
 services:
   discovery-service:
-    image: rrojas/discovery_service:latest
+    build:
+      context: ../discovery-service
+    image: discovery-service:local
     expose:
       - 8761
     ports:
@@ -8,7 +10,9 @@ services:
     networks:
       - local-development
   api-gateway:
-    image: rrojas/api-gateway:latest
+    build:
+      context: ../api-gateway
+    image: api-gateway:local
     expose:
       - 8080
     ports:
