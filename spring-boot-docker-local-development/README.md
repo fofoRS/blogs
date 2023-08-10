@@ -72,6 +72,6 @@ One of the biggest benefits of this configuration is how it frees us up from the
 - Maven 
 - Backend Services such (Data Bases, Message Brokers, etc)
 - Architecture core components (api-gateways, config-servers, discovery-servers) 
-   *Even when this service were built by ours, 
+   *Even when this service were built by us, 
    it doesn't make sense to have the source code in our local or even set them up to run locally. 
    Unless we're doing changes on one of these services.*
