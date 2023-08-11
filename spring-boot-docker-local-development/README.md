@@ -2,8 +2,8 @@
 
 Very simplistic project that counts with three services that looks for simulate a microservices based application.
 *I know I now, it needs much more things and components to cosider this a decent microservice architecture :D*
-which is to show how set up a local environment using Docker, Docker-Compose and Docker's multi stage capabilities to run a local environment easily, 
-helping us to spin up multiple services and save many hours from installing, configuring and troubleshooting. :) 
+The goal is to show how to setup and run a local development envrionment for Spring Boot based apps using Docker, Docker-Compose and Docker's multi stage build capabilities
+to help us  spin up multiple services locally and save many hours from installing, configuring and eventually troubleshooting. :) 
 
 ### MODULE STRUCTURE
 
