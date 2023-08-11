@@ -1,7 +1,7 @@
 ## spring-boot-docker-local-development
 
 Very simplistic project that counts with three services that looks for simulate a microservices based application.
-*I know I now, it needs much more things and components to cosider this a decent microservice architecture :D*
+*I know I now, it needs much more things and components to cosider this a decent microservice architecture :stuck_out_tongue_closed_eyes:*
 The goal is to show how to setup and run a local development envrionment for Spring Boot based apps using Docker, Docker-Compose and Docker's multi stage build capabilities
 to help us  spin up multiple services locally and save many hours from installing, configuring and eventually troubleshooting. :) 
 
@@ -34,7 +34,7 @@ the command and paths are relative to this folder
 
 2. run discovery-service & api-gateway, they already exist in docker hub, so won't require to build locally, 
    1. if you still want to build them and use your own images, run the following commands
-      **The building of this two images might take some time to finish, be patient :P**
+      **The building of this two images might take some time to finish, be patient :stuck_out_tongue_winking_eye:**
       > docker-compose -f infrastructure/local.docker-compose.yml up --build
    
    2. in case you want to use the remote images, run the following commands
