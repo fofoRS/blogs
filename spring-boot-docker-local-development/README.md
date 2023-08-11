@@ -54,7 +54,7 @@ From here we just have to run the container of our service(s) we're  working on 
    so we can connect a debugger client, for example Intellij debugger.
 
 4. Call endpoint in event-collector
-   > curl -H "Content-Type:application/json" http:/Ø/localhost:8080/event-collector/api/v1/events -d '{"eventType":"user-click"}' -i 
+   > curl -H "Content-Type:application/json" http://localhost:8080/event-collector/api/v1/events -d '{"eventType":"user-click"}' -i 
 
 if the first call result in a 404, wait few seconds and try again. API gateway take some time to update its discovery registry
 
